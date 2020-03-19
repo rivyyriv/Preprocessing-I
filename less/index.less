@@ -49,6 +49,29 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
+						/*Mix-in Start*/
+							.textboarder{ 
+								background-color:#D3D3D3;		  
+								font-size:  2rem;
+								border-style: solid;
+								border-radius: 10px;
+								border-color: #D3D3D3;
+								border-width: 4px;
+								padding: 5px;
+						}
+
+
+							.center {
+								display: flex;
+								justify-content: center;
+							}
+
+							.wrap{
+								display: flex;
+								flex-wrap: wrap;
+							}
+						/*Mix-in STOP*/
 * {
     box-sizing: border-box;
 }
@@ -64,42 +87,118 @@ h1{
 	display: flex;
 	justify-content: center;
 }
-nav{
-	display: flex;
-	justify-content: space-evenly;
-
-	a 	{ text-decoration: none;
-		  color:black;
-		  background-color:#D3D3D3;		  ;
-		  font-size:  2rem;
-		  border-style: solid;
-		  border-radius: 10px;
-		  border-color: #D3D3D3;
-		  border-width: 4px;
-		  padding: 5px;
-	}
-}
-
-.Experiance {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	background-color: #A9A9A9;
-	border-radius: 10px;
-    h2{
+	.intro{
+		
 		display: flex;
+		flex-direction: column;
+		.wrap();
+
+
+		.intro-words{
+
+			.center();
+			flex-direction: column;
+			margin: 2% 20%;
+
+			@media(max-width: 400px) {
+				width: 100%;
+			}
+			
+			h2{
+				font-size: 2rem;
+			}
+
+			p{
+				.center();
+				.textboarder();
+			}
+		}
+
+	.intro-image{
+			
+		.center();
+		
+			img{
+					width: 40%;
+					height: auto;
+					.textboarder();
+				}
+		}
+	}
+
+
+	nav{
+		display: flex;
+		justify-content: space-evenly;
+		.wrap();
+
+		a 	{ text-decoration: none;
+			color:black;
+			background-color:#D3D3D3;		  ;
+			font-size:  2rem;
+			border-style: solid;
+			border-radius: 10px;
+			border-color: #D3D3D3;
+			border-width: 4px;
+			padding: 5px;
+		}
+	}
+
+	.Experiance {
+		display: flex;
+		flex-direction: row;
 		justify-content: center;
-	}
-	
-	div{
-		width: 20%;
-		margin: 8%;
-		border-style: solid;
+		background-color: #A9A9A9;
 		border-radius: 10px;
-		border-color: #D3D3D3;
-		border-width: 4px;
-		padding: 5px;
+		.wrap();
+		h2{
+			.center();
+			font-size: 2rem;
+		}
+		
+		div{
+			width: 20%;
+			margin: 8%;
+			border-style: solid;
+			border-radius: 10px;
+			border-color: #D3D3D3;
+			border-width: 4px;
+			padding: 5px;
+		}
+
+
 	}
 
+	.SKILLS{
 
-}
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+
+		div{
+			width: 20%;
+			.textboarder();
+
+
+		}
+
+		h2{
+		
+			.textboarder();
+			font-size: 200%%;
+
+
+		}
+
+	
+		.Sales{
+			font-size: 150%;
+
+
+		}
+
+		.TechnicalSkills{
+			font-size: 150%;
+		}
+
+	}
