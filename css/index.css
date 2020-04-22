@@ -89,6 +89,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: 'Montserrat', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -160,26 +161,7 @@ h1 {
   display: flex;
   justify-content: center;
 }
-.intro {
-  flex-direction: column;
-  display: flex;
-  flex-wrap: wrap;
-}
-.intro .intro-words {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 2% 20%;
-}
-@media (max-width: 400px) {
-  .intro .intro-words {
-    width: 100%;
-  }
-}
-.intro .intro-words h2 {
-  font-size: 2rem;
-}
-.intro .intro-words p {
+.topcontent h2 {
   display: flex;
   justify-content: center;
   background-color: #D3D3D3;
@@ -190,12 +172,41 @@ h1 {
   border-width: 4px;
   padding: 5px;
 }
-.intro .intro-image {
+.topcontent .intro {
+  flex-direction: row;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+}
+.topcontent .intro .intro-words {
+  width: 30%;
+  margin: 2% 2%;
+}
+@media (max-width: 400px) {
+  .topcontent .intro .intro-words {
+    width: 100%;
+  }
+}
+.topcontent .intro .intro-words h2 {
+  font-size: 2rem;
+}
+.topcontent .intro .intro-words p {
   display: flex;
   justify-content: center;
+  background-color: #D3D3D3;
+  font-size: 2rem;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #D3D3D3;
+  border-width: 4px;
+  padding: 5px;
 }
-.intro .intro-image img {
-  width: 40%;
+.topcontent .intro .intro-image {
+  margin: 2% 2%;
+  width: 30%;
+}
+.topcontent .intro .intro-image img {
+  width: 100%;
   height: auto;
   background-color: #D3D3D3;
   font-size: 2rem;
@@ -221,22 +232,26 @@ nav a {
   border-width: 4px;
   padding: 5px;
 }
-.Experiance {
-  flex-direction: row;
-  justify-content: center;
+.midcontent {
+  padding: 20px;
   background-color: #A9A9A9;
-  border-radius: 10px;
-  display: flex;
-  flex-wrap: wrap;
 }
-.Experiance h2 {
+.midcontent h2 {
   display: flex;
   justify-content: center;
   font-size: 2rem;
 }
-.Experiance div {
+.midcontent .Experiance {
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 10px;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+}
+.midcontent .Experiance div {
   width: 20%;
-  margin: 8%;
+  margin: 1%;
   border-style: solid;
   border-radius: 10px;
   border-color: #D3D3D3;
@@ -244,6 +259,7 @@ nav a {
   padding: 5px;
 }
 .SKILLS {
+  padding: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
